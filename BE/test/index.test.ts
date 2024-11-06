@@ -5,7 +5,7 @@ describe("testing my default endpoint", () => {
   test("get '/'", () => {
     let result: any = supertest(serverApp).get("/");
 
-    console.log(result);
+    // console.log(result);
 
     expect(result).not.toBeNull();
     expect(result.method).toBe("GET");

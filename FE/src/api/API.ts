@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url: string = "http://localhost:4477";
+const url: string = "http://localhost:5050";
 
 export const readEconomy = async () => {
   return await axios.get(`${url}/api/read-economy`).then((res: any) => {
